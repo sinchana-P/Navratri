@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Oswald&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Slabo+27px&family=Architects+Daughter&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=El+Messiri:wght@700&family=Prata&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    padding-top: 5vh;
+    width: 100%;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://i.postimg.cc/nVjzcBMB/1832-Maa-Durga-Images-For-Navratri-Facebook-Whats-App-Status-1280x720.jpg);
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.nav-menu ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu ul li{
+    list-style: none;
+}
+
+.nav-links{
+    padding: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 35px;
+    font-weight: 600;
+    transition: all 1s;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+}
+
+.nav-links a:hover{
+    border-bottom: 3px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------Footer------- */
+
+.footer{
+    display: flex;
+    width: 100%;
+    position: sticky;
+    flex-direction: column;
+    background: linear-gradient(to right, #ff3401b3,rgba(255, 230, 2, 0.7));
+}
+
+.icons{
+    margin: 10px auto;
+    padding: 0 50px;
+    display: flex;
+}
+
+.fab{
+    margin: 20px 15px;
+    font-size: 30px;
+    transition: all 0.5s;
+    color: rgba(252, 235, 235, 0.925);
+}
+
+.fab:hover{
+    margin: 15px 15px;
+    font-size: 40px;
+}
+
+h4{
+    margin: auto;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
+
+.fas{
+    color: red;
+    position: sticky;
+    animation-name: beat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes beat {
+    0%{font-size: 20px; padding: 0 3px;}
+    50%{font-size: 26px; padding: 0px; margin-top: -2px; margin-bottom: 0%;}
+    100%{font-size: 20px; padding: 0 3px;}
+}
+
+
+
+
+/* --------------Nine Forms----------------- */
+
+.sub-header{
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url(https://i.postimg.cc/fRgNSWHp/1dbac1b3b9ecf5e5f0948e8defc7f4e2.jpg), #000;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 90%;
+    padding: 0px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h2{
+    font-size: 90px;
+    font-family: 'Akronim', cursive;
+    font-weight: 300;
+    text-decoration: underline double black 3px;
+    padding-top: 100px;
+}
+
+H1{
+    font-size: 50px;
+    font-family:'Akronim', cursive;
+    font-weight: 400;
+    text-decoration: underline double black 3px;
+    padding-top: 100px;
+    text-align: center;
+    color:rgba(15, 2, 2, 0.74);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.leftCol{
+    flex-basis: 35%;
+    
+}
+
+.leftCol img{
+    border-radius: 1%;
+    padding: 12px;
+    width: 100%;
+    box-shadow: 0 0 1px black;
+}
+
+.rightCol{
+    margin-left: 90px;
+    margin-right: 0%;
+    flex-basis: 65%;
+    font-size: 1.5em;
+    border-radius: 2%;
+    transform: translateX(-30);
+    transition: 1s;
+    padding: 50px;
+    background: rgba(255, 255, 0, 0.5);
+}
+
+.rightCol:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.right .leftCol{
+    order: 2;
+}
+
+.right .rightCol{
+    order: 1;
+    margin-right: 90px;
+    margin-left: 0%;
+    background: rgba(7, 206, 7, 0.5);
+    
+}
+
+.left .grey{
+    background: rgba(146, 143, 143, 0.5);
+}
+
+.right .orange{
+    background: rgba(255, 169, 9, 0.5);
+}
+
+.left .white{
+    background: rgba(223, 223, 165, 0.5);
+}
+
+.right .red{
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.left .royalblue{
+    background: rgba(65, 105, 225, 0.5);
+}
+
+.right .pink{
+    background: rgba(255, 75, 186, 0.5);
+}
+
+.left .purple{
+    background: rgba(146, 11, 187, 0.5);
+}
+
+
+.rightCol{
+    font-family: 'Pacifico', cursive;
+}
+
+
+/*-----CSS for Calendar-----*/
+
+.calendar{
+    width:80%;
+    margin: auto;
+    padding: 5px 10px;
+    background: linear-gradient(white,rgba(230, 230, 90, 0.945),rgba(163, 240, 157, 0.918),grey,rgb(221, 180, 104),ivory,rgb(209, 87, 87),rgb(93, 125, 223),rgb(238, 183, 192),rgb(194, 110, 194),rgb(243, 234, 234),rgb(248, 248, 182));
+}
+
+.cal-head{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 50px;
+   margin-left: 80px;
+}
+
+.cal-row{
+    display: flex;
+    flex-direction: column;
+   
+    padding: 3% 3%;
+}
+.day{
+    font-family: 'Jost', sans-serif;
+    font-size: 28px;
+}
+h3{
+    padding: 14px;
+    border-radius: 50%;
+    font-family: 'Sacramento', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    width:fit-content;
+    background-color: rgba(0,0,0,0.7);
+    color: yellow;
+    background-size: contain;
+}
+.color{
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+
+.about{
+    padding: 0% 5%;
+    margin-top: -2%;
+    margin-bottom: 4%;
+    width: 90%;
+}
+
+.about p{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+}
+
+.about h1{
+    margin-bottom: 3%;
+    font-size: 100px;
+    font-family: 'Lobster Two', cursive;
+    text-decoration: none;
+}
+
+.indexAbt{
+    background: linear-gradient(to left, #01f7ffb3,rgba(44, 255, 2, 0.7));   
+    width:50%; 
+    margin: 0% auto;
+    margin-top: 5%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.indexAbt div{
+    width: 100%;
+    text-align: left;
+    font-family: 'Architects Daughter', cursive;
+    display: flex;
+    padding: 7px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.indexAbt div .col2{
+    margin-left: -10%;
+    width: 50%;
+    text-align: center;
+}
+
+.indexAbt div .col1{
+    width: 50%;
+    padding-left: 0%;
+    text-align: center;
+}
+
+.indexAbt .heading{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+
+/*----Gallery---*/
+
+
+
+body{
+    margin:0px;
+    padding:0px;
+    background: #cce6ff;
+}
+h1{
+    text-align: center;
+    font-family:"El Messiri";
+    font-weight: 300;
+    font-size: 2.4em;
+    padding:16px 2px;
+}
+.font{
+    font-family: "Prata";
+    line-height: 0px;
+    font-size:2em ;
+}
+img{
+    border-radius: 8px;
+}
+.galleryContainer{
+    width:900px;
+    max-height: ;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    padding-bottom: 40px;
+}
+.gallery{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    width:100%;
+
+}
+.gallery input{
+    display:none;
+}
+.gallery > img:first-of-child{
+    position: absolute;
+    display:flex;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+
+
+.galleryImage{
+    position:absolute;
+    top:0;
+    left:0;
+    overflow:hidden;
+    opacity:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition: opacity 0.25s ease-out;
+
+}
+.thumbnails{
+    margin-top: 10px;
+    height: 5%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x:auto;
+    overflow-y: hidden;
+}
+.thumbnailImage{
+    margin:0 5px;
+}
+
+.thumbnailImage span{
+    font-family: 'Roboto Slab', serif ;
+    font-weight: 300px;
+    color: rgba(71, 70, 70, 0.829);
+}
+
+
+
+.thumbnailImage img{
+    width:100%;
+    height: 120px;
+    object-fit: cover;
+}
+.thumbnailImage:first-child{
+    margin-left: 0px;
+}
+
+.thumbnailImage:last-child{
+    margin-right: 0px;
+}
+
+#c1:checked + #i1{
+    opacity: 1;
+}
+
+#c2:checked + #i2{
+    opacity: 1; 
+}
+
+#c3:checked + #i3{
+    opacity: 1; 
+}
+#c4:checked + #i4{
+    opacity: 1; 
+}
+#c5:checked + #i5{
+    opacity: 1; 
+}
+#c6:checked + #i6{
+    opacity: 1; 
+}
+/*Responsive*/
+
+@media(max-width: 768px){
+    h1{
+        font-size: 1.5em;
+    }
+    .container{
+        max-width: 700px;
+        padding: 15px;
+    }
+    .galleryContainer{
+        width:100%;
+        margin:0;
+    }
+}
+
+/*-----facts-----*/
+
+
+.facts{
+    margin: 9% auto;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    width: 86%;
+}
+
+.facts .factHead{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://www.artofliving.org/sites/www.artofliving.org/files/styles/max_width/public/What-to-do-during-Navratri-min.jpg.webp?itok=Yz4wiVCp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0% -4%;
+}
+
+.do{
+    color: white;
+    padding: 0%;
+    padding-left: 5%;
+    text-decoration: none;
+    text-align: left;
+}
+
+
+.facts p{
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 1%;
+}
+
+.facts h2{
+    margin-bottom: 0.5%;
+}
+
+.facts .factBody{
+    background: linear-gradient(rgba(0,0,0,0.5),rgb(249, 249, 249));
+    padding: 2%;
+    margin-bottom: 150px;
+}
+
+.facts .headTwo{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://www.artofliving.org/sites/www.artofliving.org/files/styles/max_width/public/silence.jpg.webp?itok=nAN8GuS6);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.facts .headThree{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://www.artofliving.org/sites/www.artofliving.org/files/styles/max_width/public/Fasting%20duing%20navratri%20background.jpg.webp?itok=5whb7blc);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
