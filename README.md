@@ -1,2 +1,2 @@
-# Navratri
-2021
+# Navrathri
+ Jai Maa Durga
