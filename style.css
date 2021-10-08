@@ -147,6 +147,9 @@ h4{
         height: 40vh;
         padding-top: 1vh;
     }
+    .nav-links {
+        padding: 10px;
+}
 }
 
 
@@ -663,5 +666,5 @@ img{
 
 .container .btn{
     text-align: right;
-    margin-left: 90%;
+    margin-left: 70%;
 }
